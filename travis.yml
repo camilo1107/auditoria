@@ -28,8 +28,5 @@ before_script:
 # Compilar y ejecutar pruebas
 script:
   - vendor/bin/phpunit
-  
 
-# Despliegue de la aplicación en Tomcat
-after_success:
-  - docker run -d --name tomcat-container -p 8080:8080 -v $TRAVIS_BUILD_DIR/src/main/webapp/:/usr/local/tomcat/webapps/ tomcat:latest
+
