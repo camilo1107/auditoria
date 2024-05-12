@@ -12,13 +12,14 @@
     <h1>Conversor de Monedas</h1>
     <p>Escoge por favor la Moneda  y la cantidad para realizar la conversi&oacute;n que t&uacute; deseas.</p>
 
-    <form action="conversion.php" method="post">
+    <form  action="conversion.php" method="post">
         <input type="hidden" name="moneda-uno" id="hidden-moneda-uno">
         <input type="hidden" name="moneda-dos" id="hidden-moneda-dos">
         <input type="hidden" name="cantidad-uno" id="hidden-cantidad-uno">
         <input type="hidden" name="cantidad-dos" id="hidden-cantidad-dos">
-        
-    
+
+      
+
     <div class="container">
         <div class="moneda">
             <select name="moneda-uno" id="moneda-uno">
@@ -162,12 +163,14 @@
         </div>
 
     </div>
+
+  
     </form>
     <footer>
         <p>&copy; 2024 Mi Sitio Web - Todos los derechos reservados.</p>
         <p> Juan Camilo Ramirez Chaverra Y Juan Camilo Ramirez Hoyos</p>
     </footer>
-      <!-- Formulario de conversión de moneda -->
-    
+   
+
 </body>
 </html>

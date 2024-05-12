@@ -10,13 +10,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Construir la URL de la API con los parámetros necesarios
     $url = "https://v6.exchangerate-api.com/v6/6c000385a09765c6fbfa5911/latest/{$moneda_origen}";
-    echo $url;
+
+
     // Hacer la solicitud a la API y obtener la respuesta
     $response = file_get_contents($url);
 
-    echo $response;
-
-    // Decodificar la respuesta JSON en un arreglo asociativo
+        // Decodificar la respuesta JSON en un arreglo asociativo
     $data = json_decode($response, true);
 
     // Verificar si la solicitud fue exitosa
@@ -35,4 +34,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
-
