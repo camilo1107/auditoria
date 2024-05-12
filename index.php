@@ -5,16 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>conversor de moneda</title>
+    <title>Conversor de Moneda</title>
 </head>
 <body>
     <img src="img/logo.png" alt="" class="conversor-imagen">
     <h1>Conversor de Monedas</h1>
     <p>Escoge por favor la Moneda  y la cantidad para realizar la conversi&oacute;n que t&uacute; deseas.</p>
 
+    <form action="conversion.php" method="post">
+        <input type="hidden" name="moneda-uno" id="hidden-moneda-uno">
+        <input type="hidden" name="moneda-dos" id="hidden-moneda-dos">
+        <input type="hidden" name="cantidad-uno" id="hidden-cantidad-uno">
+        <input type="hidden" name="cantidad-dos" id="hidden-cantidad-dos">
+        
+    
     <div class="container">
         <div class="moneda">
-            <select name="" id="moneda-uno">
+            <select name="moneda-uno" id="moneda-uno">
 
             <option value="AED">AED</option>
                 <option value="ARS">ARS</option>
@@ -73,14 +80,15 @@
             <input 
             type="number" 
             id="cantidad-uno" 
+            name="cantidad-uno"
             placeholder="0"  
-            value="1"
+            
             >
 
         </div>
 
         <div class="tasa-cambio-container">
-            <button class="btn" id="tasa">
+            <button type="submit" class="btn" id="tasa">
                Conversi&oacute;n 
             </button>
 
@@ -89,7 +97,7 @@
         </div>
 
         <div class="moneda">
-            <select name="" id="moneda-dos">
+            <select name="moneda-dos" id="moneda-dos">
 
             <option value="AED">AED</option>
                 <option value="ARS">ARS</option>
@@ -148,14 +156,18 @@
             <input 
             type="number" 
             id="cantidad-dos" 
+            name="cantidad-dos"
             placeholder="0"  >
 
         </div>
 
     </div>
+    </form>
     <footer>
         <p>&copy; 2024 Mi Sitio Web - Todos los derechos reservados.</p>
         <p> Juan Camilo Ramirez Chaverra Y Juan Camilo Ramirez Hoyos</p>
     </footer>
+      <!-- Formulario de conversión de moneda -->
+    
 </body>
 </html>
