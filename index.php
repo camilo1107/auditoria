@@ -154,11 +154,11 @@
                 <option value="ZAR">ZAR</option>
             </select>
 
-            <input 
+            <!-- <input 
             type="number" 
             id="cantidad-dos" 
             name="cantidad-dos"
-            placeholder="0"  >
+            placeholder="0"  > -->
 
         </div>
 
