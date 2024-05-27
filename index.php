@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Conversor de Moneda</title>
+    <script type="module" src="firebaseconect.js"></script>
 </head>
 <body>
     <img src="img/logo.png" alt="" class="conversor-imagen">
